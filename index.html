@@ -9,6 +9,16 @@
     <title>Assignment-04</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+       #modalPosition{
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+       }
+     
+    </style>
 
 </head>
 
@@ -42,9 +52,14 @@
         <!-- all curd -->
         <div id="container" class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 ">
             <!-- single curd -->
-           
+
         </div>
     </div>
+    <!-- modal -->
+   
+        <div id="mealModal" class="hidden">
+        </div>
+
     <!-- footer section  -->
     <div class="bg-gray-700 w-full h-10 flex justify-center items-center ">
         <div class="flex justify-between w-[70%]">
@@ -56,6 +71,13 @@
             </div>
         </div>
     </div>
+    <!-- for scroll to top -->
+   <button
+      id="scrollTopBtn"
+      class="hidden font-bold fixed bottom-3 right-2 bg-amber-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <!-- cannect with index.js file -->
     <script src="./index.js"></script>
 </body>
