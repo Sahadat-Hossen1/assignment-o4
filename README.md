@@ -15,7 +15,7 @@
 🪟 Modal popup for meal details
 
 ❌ Handle “No Meal Found” case
-
+⏳ Loading spinner effect while fetching data from the API
 ⬆️ Scroll-to-top button
 
 📱 Fully responsive (Mobile + Desktop)
