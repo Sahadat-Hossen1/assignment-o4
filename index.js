@@ -3,6 +3,7 @@ const ApiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 const Container = document.getElementById("container");
 
 const fetchApi = async (searchValue = "") => {
+   Container.innerHTML=`<h1 class="text-center text-3xl text-red-700">Loading......</h1> `
   try {
     const res = await fetch(ApiUrl + searchValue);
     const data = await res.json();
