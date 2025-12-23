@@ -81,14 +81,14 @@ async function openModal(id) {
 
   const modal = document.getElementById("mealModal");
   modal.classList.remove("hidden");
-  modal.innerHTML = `<div id="modalPosition" class="bg-white py-2 px-1  rounded-2xl shadow-2xl w-2/3 md:w-1/2  flex  flex-col items-center justify-center">
-            <div class="flex-1 overflow-hidden">
-                <img id="imgId" src="${meal.strMealThumb}" style=" width:100%;higth:300px " alt="meal_image" class="rounded-t-2xl">
+  modal.innerHTML = `<div id="modalPosition" class="bg-white py-2 px-1  rounded-2xl shadow-2xl  flex  flex-col items-center justify-center">
+            <div class="flex-1 overflow-hidden w-[90%] md:w-[85%] h-auto" >
+                <img id="imgId" src="${meal.strMealThumb}" alt="meal_image" class="rounded-t-2xl">
             </div>
             <!-- modal contents -->
             <div class="flex-2 px-1 py-4">
                 <h1 class="text-2xl font-bold">${meal.strMeal} </h1>
-                <p class="text-lg">
+                <p class="text-base xl:text-lg">
                    ${meal.strInstructions.slice(0,200)}
                 </p>
                 <div class="flex justify-end pr-2">
